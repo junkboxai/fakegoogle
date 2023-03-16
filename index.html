@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fake Google</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f8f9fa;
+  }
+
+  .search-container {
+    text-align: center;
+  }
+
+  .logo {
+    width: 300px;
+  }
+
+  .search-input {
+    width: 100%;
+    max-width: 600px;
+    height: 36px;
+    padding: 0 20px;
+    margin: 20px 0;
+    font-size: 16px;
+    border: 1px solid #dfe1e5;
+    border-radius: 20px;
+    outline: none;
+  }
+
+  .search-input:focus {
+    box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+  }
+
+  .search-button {
+    background-color: #f8f9fa;
+    border: 1px solid #dfe1e5;
+    border-radius: 5px;
+    color: #3c4043;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 10px 20px;
+    outline: none;
+  }
+
+  .search-button:hover {
+    background-color: #e8eaed;
+  }
+</style>
+</head>
+<body>
+  <div class="search-container">
+    <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo" class="logo">
+    <form id="search-form">
+      <input type="text" class="search-input" placeholder="Search the web">
+      <br>
+      <button type="submit" class="search-button">Fake Google Search</button>
+    </form>
+  </div>
+  <script>
+    document.getElementById('search-form').addEventListener('submit', function(event) {
+      event.preventDefault();
+      window.location.href = 'https://instagram.com/junkboxai';
+    });
+  </script>
+</body>
+</html>
